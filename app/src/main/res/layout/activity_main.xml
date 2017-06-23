@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mainLayout"
+    tools:context="com.robert.testviewtest.MainActivity">
+
+        <!--
+        must set backgroud
+        -->
+        <com.robert.testviewtest.DragView
+            android:id="@+id/dragview"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="#00ffffff"
+        />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout"
+            android:layout_alignParentBottom="true">
+                <Button
+                    android:id="@+id/button"
+                    android:text="btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#99999999"
+                    />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:text="btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#99999999"
+                    />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:text="btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#99999999"
+                    />
+        </LinearLayout>
+</RelativeLayout>
